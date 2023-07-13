@@ -15,8 +15,8 @@ const contactUs = asyncHandler(async(req,res)=>{
     if(!subject || !message){
         res.status(400).send('Please add the subject and message');
     }
-    const send_to = process.env.EMAIL_USER
-    const sent_from = process.env.EMAIL_USER
+    const send_to = "guganesh12345@outlook.com"
+    const sent_from = "guganesh12345@outlook.com"
     const reply_to = user.email;
 
    try{
